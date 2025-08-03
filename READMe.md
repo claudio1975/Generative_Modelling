@@ -1,7 +1,7 @@
 # Harnessing Generative Models for Synthetic Non-Life Insurance Data
 
 ![matplotlib](https://img.shields.io/badge/matplotlib-3.10.0-green)
-![sklearn](https://img.shields.io/badge/sklearn-1.6.1-orange)
+![scikit-learn](https://img.shields.io/badge/scikitlearn-1.6.1-orange)
 ![shap](https://img.shields.io/badge/shap-0.48.0-purple)
 
 This study is oriented to a synthetic non-life insurance premium dataset generated using several Generative Models. As a benchmark, a Conditional Gaussian Mixture Model has been employed. The validation of the generated data involved several steps: data visualisation, comparison with univariate analysis, PCA and UMAP representations between the trained data and the generated samples. In addition, check the consistency of data produced, the statistical Kolmogorov–Smirnov test and predictive modelling of frequency and severity with Generalised Linear Models (GLMs) exploited by Tweedie distribution as a measure of the generated data's quality, followed by the evidence of features importance. For further comparison, advanced Deep Learning architectures have been employed: Conditional Variational Autoencoders (CVAEs), CVAEs enhanced with a Transformer Decoder, a Conditional Diffusion Model, and Large Language Models. The analysis assesses each model’s ability to capture the underlying distributions, preserve complex dependencies, and maintain relationships intrinsic to the premium data. These findings provide insightful directions for enhancing synthetic data generation in insurance, with potential applications in risk modelling, pricing strategies with data scarcity, and regulatory compliance.
