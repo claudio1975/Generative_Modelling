@@ -23,7 +23,7 @@ dataset was fed into the generative models, which were asked to generate an equa
 each dataset was used, with the models asked to produce a larger number of rows, equal of the first experiment. In the final trial, the gender variable 
 was omitted to enhance privacy.
 
-Validation of the generated data included several steps: data visualization, comparison through univariate analysis, PCA and UMAP representations, 
+Validation of the generated data included several steps: data visualization with comparison through univariate analysis, PCA and UMAP representations, 
 evaluation the consistency of the produced data with the original, and the statistical Kolmogorov-Smirnov test. Predictive modeling of frequency and 
 severity using Generalized Linear Models (GLMs) based on Tweedie distribution were employed as metrics for assessing the quality of the generated data. 
 Furthermore, the importance of features was analyzed.
