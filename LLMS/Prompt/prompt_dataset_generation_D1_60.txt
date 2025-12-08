@@ -1,0 +1,133 @@
+PROMPT D1 60:
+
+context: you are an expert actuarial data scientist with 20 Years of experience. 
+task: You are involved in a project to build synthetic datasets for the non-life insurance field.
+request: please, generate 53320 rows of a synthetic dataset and save in a csv file with the following characteristics 
+
+
+I retrieved features from the dataset
+
+1) columns and datatypes
+Exposure	float64
+VehValue	float64
+VehAge		object
+VehBody		object
+Gender		object
+DrivAge		object
+ClaimOcc	int64
+ClaimNb		int64
+ClaimAmount	float64
+
+2) distribution of categorical columns
+
+	count	unique	top			freq
+VehAge	39990	4	old cars		11789
+VehBody	39990	13	Sedan			13189
+Gender	39990	2	Female			22688
+DrivAge	39990	6	older work. people	9529
+
+
+3) classes of categorical variables
+Unique classes in 'VehAge': ['old cars' 'young cars' 'oldest cars' 'youngest cars']
+Unique classes in 'VehBody': ['Hatchback' 'Utility' 'Station wagon' 'Hardtop' 'Panel van' 'Sedan'
+ 'Truck' 'Coupe' 'Minibus' 'Motorized caravan' 'Bus' 'Convertible'
+ 'Roadster']
+Unique classes in 'Gender': ['Female' 'Male']
+Unique classes in 'DrivAge': ['young people' 'older work. people' 'oldest people' 'working people'
+ 'old people' 'youngest people']
+
+4) distribution of numerical variables
+
+		count		mean		std		min		25%		50%		75%		max
+Exposure	39990.0		0.468417	0.288510	0.002738	0.219028	0.44627		0.709103	0.999316
+VehValue	39990.0		1.784600	1.218853	0.000000	1.010000	1.50000		2.160000	23.590000
+ClaimOcc	39990.0		0.069342	0.254039	0.000000	0.000000	0.00000		0.000000	1.000000
+ClaimNb		39990.0		0.074294	0.281920	0.000000	0.000000	0.00000		0.000000	4.000000
+ClaimAmount	39990.0		134.537539	1005.546395	0.000000	0.000000	0.00000		0.000000	46868.179932
+
+
+5) few examples of rows are here
+
+        Exposure VehValue VehAge	VehBody	  	  Gender	DrivAge		   ClaimOcc  ClaimNb	ClaimAmount
+0	0.199863 1.30	  old cars	Sedan		  Male		young people		0	0	0.000000
+1	0.616016 0.22	  oldest cars	Hatchback	  Female	old people		0	0	0.000000
+2	0.136893 1.24	  young cars	Hatchback	  Male		working people		0	0	0.000000
+3	0.183436 1.56	  youngest cars	Hatchback	  Female	old people		0	0	0.000000
+4	0.810404 1.89	  old cars	Bus		  Female	youngest people		0	0	0.000000
+5	0.005476 6.18	  oldest cars	Convertible	  Female	old people		0	0	0.000000
+6	0.350445 0.70	  oldest cars	Coupe		  Female	young people		0	0	0.000000
+7	0.476386 1.49	  oldest cars	Hardtop		  Male		working people		0	0	0.000000
+8	0.235455 1.30	  young cars	Hatchback	  Female	old people		0	0	0.000000
+9	0.629706 2.37	  old cars	Minibus		  Male		working people		0	0	0.000000
+10	0.336756 1.26	  oldest cars	Motorized caravan Male		older work. people	0	0	0.000000
+11	0.180698 0.70	  oldest cars	Panel van	  Male		older work. people	0	0	0.000000
+12	0.002738 3.82	  youngest cars	Roadster	  Male		young people		0	0	0.000000
+13	0.309377 1.88	  young cars	Sedan		  Male		older work. people	0	0	0.000000
+14	0.043806 3.65	  old cars	Station wagon	  Male		older work. people	0	0	0.000000
+15	0.999316 3.04	  old cars	Truck		  Male		young people		1	1	1257.799999
+16	0.328542 3.24	  youngest cars	Utility		  Male		young people		1	1	801.049999
+17	0.698152 1.30	  youngest cars	Hatchback	  Female	old people		0	0	0.000000
+18	0.629706 0.34	  oldest cars	Sedan		  Female	older work. people	0	0	0.000000
+19	0.098563 1.11	  oldest cars	Hardtop		  Male		oldest people		0	0	0.000000
+20	0.588638 2.85	  young cars	Station wagon	  Female	working people		0	0	0.000000
+21	0.120465 2.74	  old cars	Station wagon	  Female	young people		0	0	0.000000
+22	0.005476 4.27	  youngest cars	Station wagon	  Male		youngest people		0	0	0.000000
+23	0.353183 1.84	  oldest cars	Station wagon	  Female	older work. people	0	0	0.000000
+24	0.158795 2.40	  oldest cars	Station wagon	  Male		young people		0	0	0.000000
+25	0.681725 3.18	  young cars	Station wagon	  Female	older work. people	1	1	389.950000
+26	0.769336 1.34	  old cars	Panel van	  Female	older work. people	1	1	471.179999
+27	0.769336 2.00	  youngest cars	Sedan		  Male		youngest people		1	1	6111.609985
+28	0.164271 0.84	  old cars	Hatchback	  Female	young people		1	1	7796.369995
+29	0.509240 1.53	  young cars	Panel van	  Female	working people		1	1	2458.329994
+30	0.262834 1.48     old cars	Sedan		  Male		old people		1	1	389.950000
+31	0.851472 0.85	  old cars	Hatchback	  Female	youngest people		1	1	756.279999
+32	0.558522 1.18	  oldest cars	Station wagon	  Male		young people		1	1	4964.509995
+33	0.750171 1.51	  old cars	Sedan		  Female	old people		1	1	345.000000
+34	0.936345 1.20	  old cars	Sedan		  Female	oldest people		1	1	259.960000
+35	0.657084 0.74	  oldest cars	Sedan		  Female	working people		1	3	2351.829998
+36	0.980151 1.21	  old cars	Sedan		  Male		oldest people		1	3	8990.809998
+37	0.703628 0.72	  oldest cars	Hatchback	  Male		youngest people		1	3	2677.663635
+38	0.887064 1.00	  oldest cars	Utility		  Male		older work. people	1	3	4054.109993
+39	0.613279 1.80	  young cars	Sedan		  Male		oldest people		1	3	4076.819997
+40	0.914442 2.95	  old cars	Station wagon	  Female	old people		1	4	2356.409999
+41	0.854209 2.20	  old cars	Station wagon	  Female	working people		1	4	6521.549995
+42	0.334018 0.80 	  oldest cars	Hatchback	  Female	older work. people	1	3	10598.429970
+43	0.783025 3.03	  young cars	Station wagon	  Female	older work. people	1	3	2716.139997
+44	0.574949 2.77	  young cars	Sedan		  Male		older work. people	1	3	1231.260000
+
+
+6) The distribution of the two target columns:
+- ClaimNb: 0 if no claim, else it follows a ~Poisson distribution
+- ClaimAmount: 0 if no claim, else positively skewed with ~gamma distribution
+
+7) Core logical relationships:
+If ClaimOcc = 0 → ClaimNb = 0 and ClaimAmount = 0
+If ClaimOcc = 1 → ClaimNb ≥ 1 and ClaimAmount > 0
+ClaimNb ∈ {0,1,2,3,4}
+Exposure ∈ (0,1]
+VehValue >= 0
+ClaimAmount >= 0
+
+8) Exposure as an offset-like driver of frequency:
+For similar risk factors, rows with higher Exposure should have proportionally higher probability of ClaimOcc and higher expected ClaimNb.
+
+9) VehAge ↔ VehValue relationship:
+VehValue distribution should depend on VehAge with a clear decreasing trend as vehicles get older
+
+10) Driver age effects on frequency:
+ClaimOcc probability should vary by DrivAge with higher risk for youngest/young and slightly elevated risk for oldest groups, and lower risk for middle working-age groups
+
+11) VehBody effects on value and severity:
+VehBody should be associated with VehValue and modestly with ClaimAmount distribution (heavier tail for larger/specialty vehicles).
+
+12) Severity structure tied to count:
+Conditional on ClaimOcc=1, ClaimAmount should have a positive association with ClaimNb at the distribution level.
+
+13) Interaction hints:
+Include mild interactions such that the combination of younger drivers and higher-value younger cars has a modestly higher claim propensity.
+ 
+14) generate a csv files and not provide code to build a dataframe
+
+
+
+
