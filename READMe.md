@@ -15,7 +15,7 @@ A Conditional Gaussian Mixture Model (CGMM) has been employed as a benchmark. Th
 based on the "claim occurence" column. For each subset, a multivariate Gaussian Mixture Model is fitted allowing to model complex, 
 multi-modal distributions. 
 This benchmark was then compared with advanced Deep Learning architectures, including a Conditional Variational Autoencoder (CVAE), a Conditional 
-Variational Autoencoder with a Transformer-based Decoder (CTVAE), and a Conditional Diffusion Model (CDF). Additionally, the GPT-5 Large Language Model 
+Variational Autoencoder with a Transformer-based Decoder (CTVAE), and a Conditional Diffusion Model (CDF). Additionally, the GPT-5.1 Large Language Model 
 was used to generate synthetic datasets through prompt instructions.
 
 The experiments were conducted on two insurance datasets retrieved from the CASdatasets R package. In the first experiment, a portion of each complete 
