@@ -1,0 +1,133 @@
+PROMPT D2 GENDER:
+
+context: you are an expert actuarial data scientist with 20 Years of experience.  
+task: You are involved in a project to build synthetic datasets for the non-life insurance field.
+request: please, generate 51638 rows of a synthetic dataset and save in a csv file with the following characteristics 
+
+
+I retrieved features from the dataset
+
+1) columns and datatypes
+OwnerAge	int64
+Area		object
+RiskClass	object
+VehAge		int64
+BonusClass	object
+Exposure	float64
+ClaimNb		int64
+ClaimAmount	int64
+ClaimOcc	int64
+
+2) distribution of categorical columns
+
+		count	unique	top							freq
+Gender		51638	2	Male							43819
+Area		51638	7	Small towns; countryside except Gotland; North...	19869
+RiskClass	51638	7	EV ratio 9-12						15105
+BonusClass	51638	7	BM7							14325
+
+3) classes of categorical variables
+
+Unique classes in 'Area': ['Suburbs; middle-sized cities'
+ "Central parts of Sweden's three largest cities"
+ 'Lesser towns except Gotland; Northern towns'
+ 'Small towns; countryside except Gotland; Northern towns'
+ 'Northern countryside' 'Northern towns'
+ "Gotland (Sweden's largest island)"]
+Unique classes in 'RiskClass': ['EV ratio 20-24' 'EV ratio 16-19' 'EV ratio 9-12' 'EV ratio 13-15'
+ 'EV ratio 6-8' 'EV ratio >25' 'EV ratio <5']
+Unique classes in 'BonusClass': ['BM4' 'BM3' 'BM2' 'BM7' 'BM1' 'BM5' 'BM6']
+
+4) distribution of numerical variables
+
+		count		mean		std		min	25%		50%		75%	max
+OwnerAge	51638.0		42.381250	12.979286	0.0	31.000000	44.000000	52.0	92.0
+VehAge		51638.0		11.114722	6.365856	0.0	5.000000	12.000000	16.0	20.0
+Exposure	51638.0		0.687829	0.332135	0.0	0.463014	0.821918	1.0	1.0
+ClaimNb		51638.0		0.010535	0.105824	0.0	0.000000	0.000000	0.0	2.0
+ClaimAmount	51638.0		260.434583	4748.164398	0.0	0.000000	0.000000	0.0	365347.0
+ClaimOcc	51638.0		0.010148	0.100224	0.0	0.000000	0.000000	0.0	1.0
+
+5) few examples of rows are here
+
+OwnerAge Area					        	RiskClass     VehAge BonusClass Exposure ClaimNb ClaimAmount ClaimOcc
+0   58	 Central parts of Sweden's three largest cities		 EV ratio 13-15	9	BM1	0.747945	0	0	0
+1   38	 Gotland (Sweden's largest island)			 EV ratio 13-15	15	BM7	1.000000	0	0	0
+2   23	 Lesser towns except Gotland; Northern towns		 EV ratio 13-15	0	BM7	0.002740	0	0	0
+3   22	 Northern countryside					 EV ratio 6-8	0	BM1	0.432877	0	0	0
+4   49	 Northern towns						 EV ratio <5	20	BM1	1.000000	0	0	0
+5   43	 Small towns; countryside except Gotland; Northern towns EV ratio 20-24	13	BM2	0.712329	0	0	0
+6   26	 Suburbs; middle-sized cities				 EV ratio 13-15	0	BM1	0.443836	0	0	0
+7   51	 Lesser towns except Gotland; Northern towns		 EV ratio 16-19	13	BM7	0.454795	0	0	0
+8   55	 Suburbs; middle-sized cities				 EV ratio 13-15	15	BM1	0.441096	0	0	0
+9   32	 Central parts of Sweden's three largest cities		 EV ratio 20-24	2	BM1	0.397260	0	0	0
+10  48	 Suburbs; middle-sized cities				 EV ratio 9-12	14	BM2	0.416438	0	0	0
+11  28	 Suburbs; middle-sized cities				 EV ratio 9-12	15	BM3	1.000000	0	0	0
+12  46	 Lesser towns except Gotland; Northern towns		 EV ratio 9-12	18	BM4	0.501370	0	0	0
+13  39	 Suburbs; middle-sized cities				 EV ratio 13-15	1	BM5	0.490411	0	0	0
+14  42	 Central parts of Sweden's three largest cities		 EV ratio <5	15	BM6	0.487671	0	0	0
+15  42	 Suburbs; middle-sized cities				 EV ratio 9-12	7	BM7	1.000000	0	0	0
+16  44	 Small towns; countryside except Gotland; Northern towns EV ratio 13-15	13	BM7	1.000000	0	0	0
+17  24	 Lesser towns except Gotland; Northern towns		 EV ratio 16-19	15	BM2	0.498630	0	0	0
+18  46	 Small towns; countryside except Gotland; Northern towns EV ratio 20-24	15	BM3	1.000000	0	0	0
+19  36	 Small towns; countryside except Gotland; Northern towns EV ratio 6-8	8	BM7	0.482192	0	0	0
+20  48	 Lesser towns except Gotland; Northern towns		 EV ratio 9-12	17	BM7	1.000000	0	0	0
+21  20	 Small towns; countryside except Gotland; Northern towns EV ratio <5	11	BM2	1.000000	0	0	0
+22  31	 Small towns; countryside except Gotland; Northern towns EV ratio >25	9	BM7	0.493151	0	0	0
+23  57	 Lesser towns except Gotland; Northern towns		 EV ratio 13-15	3	BM3	0.504110	1	2279	1
+24  50	 Small towns; countryside except Gotland; Northern towns EV ratio 20-24	10	BM7	1.000000	1	4911	1
+25  53	 Lesser towns except Gotland; Northern towns		 EV ratio 16-19	16	BM4	1.000000	1	6222	1
+26  29	 Small towns; countryside except Gotland; Northern towns EV ratio 16-19	8	BM7	1.000000	1	26169	1
+27  30	 Northern towns						 EV ratio 16-19	6	BM1	1.000000	1	10000	1
+28  53	 Small towns; countryside except Gotland; Northern towns EV ratio 9-12	3	BM7	1.000000	1	5826	1
+29  23	 Small towns; countryside except Gotland; Northern towns EV ratio 16-19	2	BM6	0.243836	1	78796	1
+30  29	 Small towns; countryside except Gotland; Northern towns EV ratio 20-24	4	BM7	1.000000	1	5605	1
+31  50	 Small towns; countryside except Gotland; Northern towns EV ratio 6-8	15	BM7	1.000000	1	6558	1
+32  31	 Suburbs; middle-sized cities				 EV ratio 16-19	12	BM1	0.994521	1	24326	1
+33  27	 Central parts of Sweden's three largest cities		 EV ratio 16-19	6	BM7	0.723288	2	91589	1
+34  54	 Small towns; countryside except Gotland; Northern towns EV ratio 20-24	0	BM7	1.000000	2	11000	1
+35  21	 Central parts of Sweden's three largest cities		 EV ratio 16-19	3	BM4	0.504110	2	69754	1
+36  26	 Lesser towns except Gotland; Northern towns		 EV ratio 13-15	2	BM1	0.419178	2	25889	1
+37  18	 Small towns; countryside except Gotland; Northern towns EV ratio 9-12	4	BM1	1.000000	2	35153	1
+38  30	 Central parts of Sweden's three largest cities		 EV ratio 13-15	3	BM7	1.000000	2	17362	1
+39  26	 Central parts of Sweden's three largest cities		 EV ratio 9-12	1	BM1	0.857534	2	276298	1
+40  24	 Small towns; countryside except Gotland; Northern towns EV ratio 20-24	9	BM2	0.386301	2	34238	1
+41  40	 Suburbs; middle-sized cities				 EV ratio 9-12	2	BM7	0.917808	2	191462	1
+42  52	 Suburbs; middle-sized cities				 EV ratio 20-24	10	BM7	1.000000	2	22111	1
+
+6) The distribution of the two target columns:
+- ClaimNb: 0 if no claim, else it follows a ~Poisson distribution
+- ClaimAmount: 0 if no claim, else positively skewed with ~gamma distribution
+
+7) Core logical relationships:
+If ClaimOcc = 0 → ClaimNb = 0 and ClaimAmount = 0
+If ClaimOcc = 1 → ClaimNb ≥ 1 and ClaimAmount > 0
+ClaimNb ∈ {0,1,2}
+Exposure ∈ (0,1]
+ClaimAmount >= 0
+
+8) Exposure as an offset-like driver of frequency:
+For similar risk factors, rows with higher Exposure should have proportionally higher probability of ClaimOcc and higher expected ClaimNb.
+
+9) Likely relationship:
+Introduce a modest dependence between VehAge and BonusClass.
+As VehAge increases, probability of higher BonusClass (e.g., BM6–BM7) increases slightly, while probability of lower classes (BM1–BM3) decreases slightly.
+This trend should be soft with overlap across all ages.
+
+10) tie it to OwnerAge:
+-Ensure OwnerAge is moderately positively associated with VehAge.
+-Ensure OwnerAge is positively associated with BonusClass (older owners slightly more likely in higher BM classes).
+-As a result, allow a mild positive association between VehAge and BonusClass.
+
+11) Severity structure tied to count:
+Conditional on ClaimOcc=1, ClaimAmount should have a positive association with ClaimNb at the distribution level.
+
+12) Add weak dependencies with Area/RiskClass
+Allow slight differences in RiskClass distribution across Area.
+
+13) Add light consistency rules for ages
+Allow a small fraction of OwnerAge = 0 to reflect missingness; otherwise keep ages within realistic adult bounds
+
+14) generate a csv files and not provide code to build a dataframe
+
+
