@@ -35,7 +35,7 @@ in the face of data scarcity, and ensuring regulatory compliance.
 Keywords: 
 
 Conditional Variational Autoencoder, Conditional Gaussian Mixture Model, Conditional Diffusion Model, Conditional Variational Autoencoder with a Transformer-based Decoder, 
-GPT-5 Large Language Model, PCA, UMAP, GLMs
+GPT-5.1 Large Language Model, PCA, UMAP, GLMs
 
 References: 
 
