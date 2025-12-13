@@ -7,7 +7,7 @@
 ![scikit-learn](https://img.shields.io/badge/scikitlearn-1.6.1-orange)
 ![tensorflow](https://img.shields.io/badge/tensorflow-2.19.0-brown)
 ![shap](https://img.shields.io/badge/shap-0.50.0-purple)
-![umap](https://img.shields.io/badge/umap-learn-0.5.9-yellow)
+![umap](https://img.shields.io/badge/umap-0.5.9-yellow)
 
 Obtaining realistic and publicly accessible datasets is a major barrier to advancing actuarial research and developing open-source tools for 
 insurance analytics. This study is oriented to a synthetic non-life insurance premium dataset generated using various Generative Models.
