@@ -1,7 +1,7 @@
 # Harnessing Generative Models for Synthetic Non-Life Insurance Data
 
 ![matplotlib](https://img.shields.io/badge/matplotlib-3.10.0-green)
-![seaborn](https://img.shields.io/badge/seaborn-0.13.1-yellow)
+![seaborn](https://img.shields.io/badge/seaborn-0.13.2-yellow)
 ![numpy](https://img.shields.io/badge/numpy-2.0.2-blue)
 ![pandas](https://img.shields.io/badge/pandas-2.2.2-red)
 ![scikit-learn](https://img.shields.io/badge/scikitlearn-1.6.1-orange)
