@@ -48,5 +48,6 @@ References:
 6. Harshvardhan GM, Mahendra Kumar Gourisaria, Manjusha Pandey, Siddharth Swarup Rautaray, 2020, *A comprehensive survey and analysis of generative models in machine learning*, ScienceDirect.
 
 You can read the [article](https://medium.com/@c.giancaterino/stop-waiting-for-data-how-generative-models-are-reshaping-insurance-analytics-ec102a2e5177)
+
 You can watch results from the [demo app](https://huggingface.co/spaces/towardsinnovationlab/Generative_Models_4_Insurance_Data)
 
