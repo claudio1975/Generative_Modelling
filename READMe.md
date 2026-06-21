@@ -49,7 +49,9 @@ References:
 
 You can read the [article](https://medium.com/@c.giancaterino/stop-waiting-for-data-how-generative-models-are-reshaping-insurance-analytics-ec102a2e5177)
 
-You can watch results from the [demo app](https://huggingface.co/spaces/towardsinnovationlab/Generative_Models_4_Insurance_Data)
+You can watch results from:
+https://generativemodels.streamlit.app
+https://huggingface.co/spaces/towardsinnovationlab/Generative_Models_4_Insurance_Data
 
 You can watch the [video](https://www.youtube.com/watch?v=DQ58pGWp0NE&list=PLGVZCDnMOq0qmerwB1eITnr5AfYRGm0DF&index=21) from PyData Global 2025 
 
