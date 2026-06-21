@@ -50,6 +50,7 @@ References:
 You can read the [article](https://medium.com/@c.giancaterino/stop-waiting-for-data-how-generative-models-are-reshaping-insurance-analytics-ec102a2e5177)
 
 You can watch results from:
+
 https://generativemodels.streamlit.app
 https://huggingface.co/spaces/towardsinnovationlab/Generative_Models_4_Insurance_Data
 
