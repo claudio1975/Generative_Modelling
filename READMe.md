@@ -51,6 +51,8 @@ You can read the [article](https://medium.com/@c.giancaterino/stop-waiting-for-d
 
 You can watch results from:
 
+
+
 https://generativemodels.streamlit.app
 https://huggingface.co/spaces/towardsinnovationlab/Generative_Models_4_Insurance_Data
 
